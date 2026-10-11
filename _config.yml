@@ -1,1 +1,26 @@
+title: AI Media Company — Knowledge Archive
+description: Articles and guides from the AI Media Company content pipeline.
+url: "https://pechettisravankumarai.github.io"
+baseurl: "/ai-media-blog"
+
+theme: minima
+
+# Explicit — matches the permalink structure already live and working for
+# all 7 existing posts (GitHub Pages' own default when no theme/config was
+# set): /:year/:month/:day/:title.html. Setting it explicitly here just
+# locks in behavior that was previously implicit, so it can't silently
+# change. Does not alter any existing post's URL.
+permalink: /:year/:month/:day/:title.html
+
+# minima's top nav: "Home" is always implicit (links to site root); these
+# two pages are added alongside it. No other nav mechanism needed.
+header_pages:
+  - articles.html
+  - about.md
+
+# Explicitly not setting an avatar/social config, favicon, or any value that
+# would require an asset this repo doesn't have (see GP-3 finding: the
+# previously-referenced og-default.png doesn't exist) — nothing here
+# references an asset that isn't either provided by the minima gem itself
+# or already present in the repo.
 
